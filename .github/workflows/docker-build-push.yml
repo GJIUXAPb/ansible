@@ -27,4 +27,4 @@ jobs:
       with:
         push: true
         tags: |
-          gjiuxapb/openwrt-ansible:latest
+          gjiuxapb/ansible:latest
