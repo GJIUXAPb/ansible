@@ -1,0 +1,8 @@
+[all]
+server ansible_host=ENV_HOST
+
+[all:vars]
+user=ENV_USER
+ansible_user={{ user }}
+ansible_python_version=ENV_VERSION
+ansible_python_interpreter=/home/{{ user }}/.pyenv/versions/{{ ansible_python_version }}/bin/python

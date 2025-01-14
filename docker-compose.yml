@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  ansible:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gjiuxapb/ansible:latest
+    container_name: ansible
+    stdin_open: true
+    restart: always
+    network_mode: host
+    tty: true
+    volumes:
+      # Монтируем локальную папку с playbook, inventory и ключами
+      - ./app:/ansible
+    working_dir: /ansible
+    command: ["/bin/bash"]

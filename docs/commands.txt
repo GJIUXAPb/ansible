@@ -1,0 +1,5 @@
+Проверка соединения с сервером
+docker exec -it ansible ansible -i /ansible/inventory/hosts.ini server -m ping --private-key /ansible/keys/id_rsa
+
+Выполнения плейбука NAME.yml
+docker exec -it ansible ansible-playbook -i /ansible/inventory/hosts.ini /ansible/playbooks/NAME.yml --private-key /ansible/keys/id_rsa

@@ -1,0 +1,7 @@
+!.gitignore
+/app/inventory/*
+!/app/inventory/hosts.ini.example
+/app/keys/*
+!/app/keys/.1
+/app/playbooks/*
+!/app/playbooks/.1
